@@ -1,0 +1,7 @@
+.panel .panel-body.bc-table{
+	padding: 0;
+}
+.panel .panel-body.bc-table table{
+	height: 150px;
+	overflow-y: scroll;
+}
