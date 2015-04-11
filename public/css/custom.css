@@ -2,6 +2,43 @@
 	padding: 0;
 }
 .panel .panel-body.bc-table table{
-	height: 150px;
 	overflow-y: scroll;
+}
+.station-info ul.list-unstyled{
+	margin: 0;
+	padding: 0;
+}
+.station-info ul.list-unstyled li:last-child{
+	margin-bottom: 0;
+}
+#row-info .panel-body{
+	height: 110px;
+	max-height: 110px;
+	overflow: hidden;
+}
+.sales-summary .summary{
+	
+}
+.sales-summary .txt{
+}
+.sales-summary .summary .game{
+	text-align: center;
+}
+.sales-summary .summary .game .number{
+	padding-top: 20px;
+}
+.sales-summary .sales-value{
+	font-size: 20px;
+	font-weight: 700;
+}
+.sales-summary .sales-percent{
+
+}
+.sales-summary .sales-percent span.icon24{
+	color: #9fc569 !important;
+	margin-left: 0;
+	margin-right: -4px;
+}
+#row-info .panel-body.game-buttons{
+	
 }

@@ -53,7 +53,7 @@
 
 </div><!-- End #header -->
 <div id="content">
-	<div class="row">
+	<div id="row-info" class="row">
 		<div class="col-xs-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
@@ -62,8 +62,12 @@
 						<span>Information</span>
 					</h4>
 				</div>
-				<div class="panel-body">
-					<p>panel container with icon in title</p>
+				<div class="panel-body station-info">
+					<ul class="list-unstyled">
+						<li><span class="icon16 cut-icon-desktop"></span>Station ID: <span class="text-default">1</span></li>
+						<li><span class="icon16 icomoon-icon-heart-5"></span>Bingo Status: <span class="text-success">ONLINE</span></li>
+						<li><span class="icon16 icomoon-icon-history"></span>Last Synced: <span class="text-default">Jan 1, 2015 10:35PM</span></li>
+					</ul>
 				</div>
 			</div><!-- End .panel -->
 		</div><!-- End .span4 -->
@@ -75,8 +79,27 @@
 						<span>Sales Summary</span>
 					</h4>
 				</div>
-				<div class="panel-body">
-					<p>panel container with icon in title</p>
+				<div class="panel-body sales-summary">
+					<div class="summary">
+                        <div class="game col-xs-6">
+                            <div class="head clearfix">
+                                <div class="txt">Bingo Combo</div>
+                            </div>
+							<div class="number">
+								<span class="sales-value">30</span>
+								<span class="sales-percent"><span class="icon24 icomoon-icon-arrow-up-2 green"></span> 1%</span>
+							</div>
+						</div>
+                        <div class="game col-xs-6">
+                            <div class="head clearfix">
+                                <div class="txt">6/42-55 Game</div>
+                            </div>
+                            <div class="number">
+								<span class="sales-value">499</span>
+								<span class="sales-percent"><span class="icon24 icomoon-icon-arrow-up-2 green"></span> 1%</span>
+							</div>
+                        </div>
+                    </div>
 				</div>
 			</div><!-- End .panel -->
 		</div><!-- End .span4 -->
@@ -88,7 +111,7 @@
 						<span>Games</span>
 					</h4>
 				</div>
-				<div class="panel-body">
+				<div class="panel-body game-buttons">
 					<button class="btn btn-danger btn-block" type="button">Bingo Combo</button>
 					<button class="btn btn-default btn-block" type="button">6/42-55 Game</button>
 				</div>
