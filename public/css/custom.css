@@ -42,6 +42,20 @@
 #row-info .panel-body.game-buttons{
 	
 }
+/**BET POPUP**/
+.bet-input{
+	font-weight: 700;
+	padding-left: 0;
+	padding-right: 0;
+	text-align: center;
+}
+#bet-draw-date-text{
+	font-size: 20px;
+	margin: 2px 0 0;
+	padding-right: 20px;
+}
+
+/**MODAL**/
 .modal-dialog {
   position:absolute;
   top:50% !important;
@@ -75,6 +89,18 @@
   right:0;
 }
 .modal-add-bet{
-	height: 400px;
+	height: 575px;
 	width: 500px;
+}
+.modal-add-bet .modal-body{
+	height: 350px;
+	overflow: hidden;
+}
+/**PANEL**/
+.panel.panel-pop{
+	margin: 0 0 10px;
+	min-height: 0;
+}
+.col-xs-offset-right-4 {
+  margin-right: 33.33333333%;
 }

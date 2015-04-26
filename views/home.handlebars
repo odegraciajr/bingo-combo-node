@@ -214,7 +214,7 @@
 					</h4>
 				</div>
 				<div class="panel-body">
-					<button type="button" class="btn btn-primary btn-block" type="button">Add Bet</button>
+					<button type="button" id="add-bet-btn" class="btn btn-primary btn-block" type="button">Add Bet</button>
 					<button class="btn btn-primary btn-block" type="button">Clear Bet</button>
 					<!--<button class="btn btn-primary btn-block" type="button">Print Receipt</button>-->
 					<button class="btn btn-primary btn-block" type="button">Void Bet</button>
@@ -332,6 +332,10 @@
 							<span class="pull-right"><strong>0.00</strong></span>
 						</div>
 					</div>
+					<select class="form-control">
+						<option value="1">6/45 Mega Combo</option>
+						<option value="2">6/55 Grand Combo</option>
+					</select>
 				</div>
 			</div><!-- End .panel -->
 		</div><!-- End .span4 -->
@@ -339,7 +343,7 @@
 	
 </div>
 <!-- Modal -->
-  <div class="modal modal-add-bet" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal modal-add-bet" id="mod-add-bet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
         <div class="modal-header">
@@ -347,11 +351,90 @@
           <h4 class="modal-title" id="myModalLabel">Add Bet</h4>
         </div>
         <div class="modal-body">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sed dolores iusto ab vero tempora in earum accusantium quas iure repellendus fugit ipsa reiciendis. Id illo natus sequi ex eveniet!</p>
-        </div>
+			<div class="panel panel-default panel-pop">
+				<div class="panel-heading">
+					<h4>
+						<span class="icon16 iconic-icon-lightbulb"></span>
+						<span>Draw Date: <span id="bet-draw-date-text" class="pull-right text-primary">Jan 1, 2015 10:35PM</span></span>
+					</h4>
+				</div>
+			</div>
+			<div class="panel panel-default panel-pop">
+				<div class="panel-heading">
+					<h4>
+						<span class="icon16 iconic-icon-lightbulb"></span>
+						<span>Bingo Game</span>
+					</h4>
+				</div>
+				<div class="panel-body">
+					<select class="form-control">
+						<option value="1">6/45 Mega Combo</option>
+						<option value="2">6/55 Grand Combo</option>
+					</select>
+				</div>
+			</div>
+			<div class="panel panel-default panel-pop">
+				<div class="panel-heading">
+					<h4>
+						<span class="icon16 iconic-icon-lightbulb"></span>
+						<span>Combination</span>
+					</h4>
+				</div>
+				<div class="panel-body">
+					<!--<div class="row">
+						<div class="col-xs-2">
+							<input type="text" class="form-control">
+						</div>
+						<div class="col-xs-2">
+							<input type="text" class="form-control">
+						</div>
+						<div class="col-xs-2">
+							<input type="text" class="form-control">
+						</div>
+						<div class="col-xs-2">
+							<input type="text" class="form-control">
+						</div>
+						<div class="col-xs-2">
+							<input type="text" class="form-control">
+						</div>
+						<div class="col-xs-2">
+							<input type="text" class="form-control">
+						</div>
+					</div>-->
+					<div class="row">
+						<div class="col-xs-2 col-xs-offset-4">
+							<input type="text" class="form-control bet-input" autocomplete="off">
+						</div>
+						<div class="col-xs-2 col-xs-offset-right-4">
+							<input type="text" class="form-control bet-input" autocomplete="off">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<div class="form-group">
+						<div class="input-group">
+						  <div class="input-group-addon">Amount</div>
+						  <input type="text" class="form-control" value="$1.00" disabled>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-6">
+					<div class="form-group">
+						<div class="input-group">
+						  <div class="input-group-addon">Number Of Bets</div>
+						  <input type="number" class="form-control" value="1" autocomplete="off">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-default">Clear</button>
+		  <button type="button" class="btn btn-default">Random Pick</button>
+		  <button type="button" class="btn btn-primary">Add Bet</button>
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
