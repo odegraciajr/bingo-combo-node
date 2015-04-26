@@ -44,7 +44,6 @@
 					</ul>
 				</li>
 			</ul>
-		  
 			<ul class="nav navbar-right usernav">
 				<li><a href="#"><span class="icon16 icomoon-icon-cog"></span><span class="txt"> Settings</span></a></li>
 			</ul>
@@ -194,7 +193,15 @@
 						  </tr>
 						</tbody>
 					</table>
-					<span class="text-info">To delete bet, Select an item then press DELETE key.</span>
+					<div class="row">
+						<div class="col-xs-8">
+							<span class="text-info">To delete bet, Select an item then press DELETE key.</span>
+						</div>
+						<div class="col-xs-4">
+							<span class="pull-left">Sub Total:</span>
+							<span class="pull-right">$9.00</span>
+						</div>
+					</div>
 				</div>
 			</div><!-- End .panel -->
 		</div><!-- End .span4 -->
@@ -202,20 +209,150 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4>
-						<span class="icon16 icomoon-icon-grid-2"></span>
+						<span class="icon16 icomoon-icon-menu"></span>
 						<span>Menu</span>
 					</h4>
 				</div>
 				<div class="panel-body">
-					<button class="btn btn-primary btn-block" type="button">Add Bet</button>
+					<button type="button" class="btn btn-primary btn-block" type="button">Add Bet</button>
 					<button class="btn btn-primary btn-block" type="button">Clear Bet</button>
-					<button class="btn btn-primary btn-block" type="button">Print Receipt</button>
+					<!--<button class="btn btn-primary btn-block" type="button">Print Receipt</button>-->
 					<button class="btn btn-primary btn-block" type="button">Void Bet</button>
-					<button class="btn btn-primary btn-block" type="button">Validate</button>
+					<!--<button class="btn btn-primary btn-block" type="button">Validate</button>-->
 					<button class="btn btn-primary btn-block" type="button">Advance Betting</button>
+				</div>
+			</div><!-- End .panel -->
+		</div><!-- End .span4 -->
+	</div>
+	<div class="row">
+		<div class="col-xs-8">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4>
+						<span class="icon16 entypo-icon-trophy"></span>
+						<span>Previous Day Results</span>
+					</h4>
+				</div>
+				<div class="panel-body bc-table">
+					<table class="table table-striped table-bordered table-condensed">
+						<thead>
+						  <tr>
+							<th>#</th>
+							<th>Date</th>
+							<th>Type</th>
+							<th>1st</th>
+							<th>2nd</th>
+							<th>3rd</th>
+							<th>4th</th>
+							<th>5th</th>
+							<th>6th</th>
+							<th>Amount</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>1</td>
+							<td>12/12/86</td>
+							<td>Bingo Combo</td>
+							<td>44</td>
+							<td>5</td>
+							<td>6</td>
+							<td>3</td>
+							<td>2</td>
+							<td>1</td>
+							<td>$10</td>
+						  </tr>
+						  <tr>
+							<td>2</td>
+							<td>12/12/86</td>
+							<td>Bingo Combo</td>
+							<td>22</td>
+							<td>3</td>
+							<td>16</td>
+							<td>7</td>
+							<td>5</td>
+							<td>1</td>
+							<td>$10</td>
+						  </tr>
+						  <tr>
+							<td>2</td>
+							<td>12/12/86</td>
+							<td>Bingo Combo</td>
+							<td>22</td>
+							<td>3</td>
+							<td>16</td>
+							<td>7</td>
+							<td>5</td>
+							<td>1</td>
+							<td>$10</td>
+						  </tr>
+						</tbody>
+					</table>
+				</div>
+			</div><!-- End .panel -->
+		</div><!-- End .span4 -->
+		<div class="col-xs-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4>
+						<span class="icon16 icomoon-icon-tag-5"></span>
+						<span>Previous Transaction</span>
+					</h4>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-xs-8">
+							<span class="text-info"><strong>Cash:</strong></span>
+						</div>
+						<div class="col-xs-4">
+							<span class="pull-right"><strong>0.00</strong></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-8">
+							<span class="text-info"><strong>Discount:</strong></span>
+						</div>
+						<div class="col-xs-4">
+							<span class="pull-right"><strong>0.00</strong></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-8">
+							<span class="text-info"><strong>Total:</strong></span>
+						</div>
+						<div class="col-xs-4">
+							<span class="pull-right"><strong>0.00</strong></span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-8">
+							<span class="text-info"><strong>Change:</strong></span>
+						</div>
+						<div class="col-xs-4">
+							<span class="pull-right"><strong>0.00</strong></span>
+						</div>
+					</div>
 				</div>
 			</div><!-- End .panel -->
 		</div><!-- End .span4 -->
 	</div>
 	
 </div>
+<!-- Modal -->
+  <div class="modal modal-add-bet" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">Add Bet</h4>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad sed dolores iusto ab vero tempora in earum accusantium quas iure repellendus fugit ipsa reiciendis. Id illo natus sequi ex eveniet!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->

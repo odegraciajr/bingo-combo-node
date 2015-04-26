@@ -1,3 +1,5 @@
+var port = 3001;
+
 var express = require('express');
 var exphbs  = require('express-handlebars');
 
@@ -11,4 +13,5 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
-app.listen(3001);
+app.listen(port);
+console.log('started at port: '+ port);
