@@ -2,6 +2,8 @@ jQuery(document).ready(function($){
 	
 	$('#add-bet-btn').click(function(){
 		$('#mod-add-bet').modal('show');
+		//var t = $('#mod-add-bet');
+		//t.show();
 	});
 	$('#mod-add-bet').on('show.bs.modal', function (e) {
 		$(this).center();

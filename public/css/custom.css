@@ -91,6 +91,7 @@
 .modal-add-bet{
 	height: 575px;
 	width: 500px;
+	z-index:2000;
 }
 .modal-add-bet .modal-body{
 	height: 350px;
@@ -103,4 +104,8 @@
 }
 .col-xs-offset-right-4 {
   margin-right: 33.33333333%;
+}
+#poptest{
+	display: none;
+width: 300px;
 }
