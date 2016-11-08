@@ -1,7 +1,7 @@
 {
   "name": "bingocombo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Bingo Combo port for NodeJS",
   "main": "app.js"
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,5 @@
     "mysql": "^2.6.1"
   },
 	"node-main": "./bin/www",
-	
+
 }
